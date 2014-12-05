@@ -1,4 +1,5 @@
 .openlayers_behavior_geolocate_button_panel {
+  cursor: pointer;
   position: absolute;
   top: 22px;
   left: 55px;
