@@ -1,0 +1,4 @@
+name = Openlayers Geolocate Button
+description = An Openlayers behavior that adds a button for manually geolocating the map
+core = 7.x
+dependencies[] = openlayers

@@ -1,0 +1,11 @@
+.openlayers_behavior_geolocate_button_panel {
+  position: absolute;
+  top: 22px;
+  left: 55px;
+}
+
+.openlayers_behavior_geolocate_buttonItemInactive {
+  background: url('openlayers_behavior_geolocate_button.png');
+  width: 24px;
+  height: 24px;
+}

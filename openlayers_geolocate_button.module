@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Openlayers Geolocate Button module
+ */
+
+/**
+ * Implements hook_openlayers_behaviors().
+ */
+function openlayers_geolocate_button_openlayers_behaviors() {
+  $behaviors['openlayers_behavior_geolocate_button'] = array(
+    'title' => t('Geolocate Button'),
+    'description' => t('Provides the geolcoation button that allows the user to manually zoom to their current location on the map.  Based on HTML5 geolocation, so this will not be supported in all browsers.'),
+    'type' => 'map',
+    'path' => drupal_get_path('module', 'openlayers_geolocate_button') . '/includes/behaviors',
+    'behavior' => array(
+      'class' => 'openlayers_behavior_geolocate_button',
+      'file' => 'openlayers_behavior_geolocate_button.inc',
+      'parent' => 'openlayers_behavior_geolocate'
+    ),
+  );
+  return $behaviors;
+}
